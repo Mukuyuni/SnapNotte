@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapNote - Homepage</title>
+    <link rel="stylesheet" href="css/homepage-style.css"> <!-- Link to the CSS file -->
+    <style>
+        /* Artistic background and text styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('Images/Villages\ in\ vaal\ gardena\,\ chrismas\ dolomites\ Italy.png'); /*  background image 
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; /* White text for contrast */
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Transparent header background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            font-family: 'Georgia', serif; /* Artistic typography for title */
+            color: #ffdd57; /* Gold accent for the logo title */
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .add-note, .notes-section, .edit-note-section {
+            background: rgba(0, 0, 0, 0.6); /* Dark translucent background for sections */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background: #ffdd57; /* Gold button background */
+            color: #000;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffcc33; /* Darker gold on hover */
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>SnapNote</h1>
+            <p>Your thoughts, beautifully organized.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section to Add Notes -->
+        <section class="add-note">
+            <h2>Add a New Note</h2>
+            <form action="add_notes.php" method="POST" id="noteForm">
+                <input type="text" name="title" placeholder="Note Title" id="title" required>
+                <textarea name="content" placeholder="Write your note here..." id="content" required></textarea>
+                <button type="submit">Save Note</button>
+            </form>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+            <h2>Your Notes</h2>
+            <button id="viewNotesButton">View Notes</button>
+            <div class="notes-container" id="notesContainer">
+                <!-- Notes will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Hidden Edit Form -->
+        <section class="edit-note-section" id="editNoteSection" style="display: none;">
+            <h2>Edit Note</h2>
+            <form id="editNoteForm">
+                <input type="hidden" name="id" id="noteId"> <!-- Hidden input to store note ID -->
+                <input type="text" name="title" id="editTitle" placeholder="Note Title" required>
+                <textarea name="content" id="editContent" placeholder="Note Content" required></textarea>
+                <button type="submit">Update Note</button>
+                <button type="button" id="cancelEdit">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 SnapNote. All rights reserved.</p>
+    </footer>
+
+    <script src="js/homepage.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

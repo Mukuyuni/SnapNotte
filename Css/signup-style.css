@@ -1,0 +1,57 @@
+/* Sign-Up Section */
+.signup-section {
+    background: linear-gradient(135deg, #4A90E2, #357ABD); /* Gradient fallback */
+    background-image: url('../Images/aerial\ view\ of\ new\ york\,\ mannhattan.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Sign-Up Card with Glassmorphism */
+.signup-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+.form-control {
+    height: 50px;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 2px solid #4A90E2;
+    box-shadow: 0px 4px 10px rgba(74, 144, 226, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #4A90E2;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

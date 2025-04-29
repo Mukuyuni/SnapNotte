@@ -1,0 +1,177 @@
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #124775, #086c71);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #e4cb0e;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Section Titles */
+h2 {
+    color: #0c4c84;
+    margin-bottom: 10px;
+}
+
+/* Section Containers */
+section {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Note Form */
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4facfe;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #720fa0;
+}
+
+/* View Notes Button */
+#viewNotesButton {
+    background: #3927a3;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+#viewNotesButton:hover {
+    background: #007bbd;
+}
+
+/* Notes Container */
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Note Styling */
+.note {
+    background: #151995;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.note h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.note p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.note .timestamp {
+    font-size: 0.8rem;
+    color: #cda919; 
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+}
+
+/* Edit Button */
+.edit-button {
+    background: #00a2fe;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.edit-button:hover {
+    background: #007bbd;
+}
+
+/* Delete Button */
+.delete-button {
+    background: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.delete-button:hover {
+    background: #c62828;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+

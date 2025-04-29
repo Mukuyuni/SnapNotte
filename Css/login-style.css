@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Add background image */
+    background: url('../Images/Rio\ negro\,\ amazon\ basin\,\ Brazil.png') no-repeat center center fixed;
+    background-size: cover; /* Make the image cover the entire page */
+    color: white;
+}
+
+/* Login Container Styling */
+.login-container {
+    background: rgba(61, 26, 150, 0.9); /* Add semi-transparent white overlay */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4A90E2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #5f0707;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4A90E2;
+    color: rgb(111, 15, 15);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+a {
+    color: #785c11;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #600d0b;
+    text-decoration: underline;
+}
